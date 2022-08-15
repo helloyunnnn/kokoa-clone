@@ -1,0 +1,21 @@
+.navigation-var {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 64px;
+  background-color: #f8f8f8;
+  border-top: 1px solid #e5e5e5;
+  padding: 0px 40px;
+  box-sizing: border-box;
+}
+
+.navigation-var ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-var i {
+  font-size: 26px;
+}

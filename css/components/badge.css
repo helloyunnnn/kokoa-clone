@@ -1,0 +1,12 @@
+.badge {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 105, 67);
+  color: white;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+}

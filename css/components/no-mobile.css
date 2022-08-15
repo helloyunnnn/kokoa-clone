@@ -1,0 +1,44 @@
+#no-mobile {
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+  background-color: #382a25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  position: absolute;
+  top: 0;
+}
+
+@media screen and (max-width: 560px) and (min-width: 440px) and (min-height: 650px) {
+  #no-mobile {
+    display: none;
+  }
+}
+
+#no-mobile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#no-mobile-content img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+#no-mobile-content span {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+#no-mobile-content span:last-child {
+  font-size: 14px;
+  font-weight: 200;
+  margin-top: 10px;
+}

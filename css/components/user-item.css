@@ -1,0 +1,119 @@
+.user-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.user-item:hover {
+  background-color: rgba(0, 0, 0, 0.025);
+}
+
+.user-item__column:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.user-item__image {
+  width: 70px;
+  height: 70px;
+  border-radius: 40%;
+  margin-right: 14px;
+}
+
+.user-item__image--birth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(255, 88, 96);
+  color: white;
+}
+
+.user-item__image--medium {
+  width: 60px;
+  height: 60px;
+}
+
+.user-item__image--small {
+  width: 50px;
+  height: 50px;
+}
+
+.uset-item__title {
+  display: flex;
+  flex-direction: column;
+}
+
+.uset-item__title span:first-child {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.uset-item__title span:nth-child(2) {
+  font-size: 13px;
+  margin-top: 6px;
+  color: var(--light-text-color);
+}
+
+.user-item--chats .uset-item__title span:nth-child(2) {
+  font-size: 15px;
+  margin-top: 8px;
+  color: var(--light-text-color);
+}
+
+.user-item__column:nth-child(2) {
+  color: var(--light-text-color);
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.user-item__column:nth-child(2) > span:first-child {
+  font-size: 12px;
+}
+
+.user-item__column:nth-child(2) > i {
+  font-size: 13px;
+  padding-left: 3px;
+}
+
+.user-item--chats .user-item__column:nth-child(2) > span:first-child {
+  position: absolute;
+  top: -15px;
+  right: 0px;
+}
+
+.user-item--chats .user-item__column:nth-child(2) > span:nth-child(2) {
+  position: absolute;
+  top: 5px;
+  right: 0px;
+}
+
+.user-item__column:nth-child(2) i {
+  margin-left: 4px;
+}
+
+.user-item__column--music {
+  border: 1px solid red;
+  border-radius: 15px;
+  padding: 6px 8px;
+}
+
+.user-item__column--music a {
+  display: flex;
+  align-items: center;
+}
+
+.user-item__column--music span {
+  font-size: 12px;
+  color: #707070;
+  margin-right: 2px;
+}
+
+.user-item__column--music i {
+  color: red;
+  font-size: 10px;
+  margin-top: 1px;
+}

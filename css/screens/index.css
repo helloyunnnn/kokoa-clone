@@ -1,0 +1,130 @@
+.welcome-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 30px);
+  background-color: rgb(255, 250, 242);
+  margin-top: 30px;
+}
+
+.welcome-message img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-message span:nth-child(2) {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.welcome-message p {
+  width: 80%;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.welcome-button {
+  font-size: 18px;
+  padding: 15px 20px;
+  background-color: #ffdf64;
+  border-radius: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-button i {
+  margin-left: 2px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  width: 100vw;
+  height: 100vh;
+  background-color: #382a25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  position: absolute;
+  top: 0;
+  animation: hideSplashScreen 0.3s ease-in-out forwards;
+  animation-delay: 3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#splash-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#splash-content img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+}
+
+@keyframes paw-animation {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#splash-message i {
+  font-size: 10px;
+  color: rgb(255, 255, 255);
+  animation: paw-animation 1.5s ease-in-out infinite;
+}
+
+#splash-message i:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+#splash-message i:last-child {
+  animation-delay: 0.6s;
+}
+
+#splash-content span {
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  margin-top: 10px;
+}
