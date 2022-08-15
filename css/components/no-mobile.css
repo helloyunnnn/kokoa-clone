@@ -11,7 +11,7 @@
   top: 0;
 }
 
-@media screen and (max-width: 560px) and (min-width: 440px) and (min-height: 650px) {
+@media screen and (max-width: 560px) and (min-width: 350px) and (min-height: 650px) {
   #no-mobile {
     display: none;
   }
